@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Slider } from '../components'
+import { Navbar, Slider, About, Featured } from '../components'
 
 const Home = () => {
   return (
@@ -12,6 +12,15 @@ const Home = () => {
       <div className="w-full">
         <Slider />
       </div>
+
+      <div className="w-full">
+        <About />
+      </div>
+
+      <div className="w-full">
+        <Featured />
+      </div>
+
     </div>
   )
 }
