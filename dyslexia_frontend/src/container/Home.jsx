@@ -1,10 +1,17 @@
 import React from 'react';
-import { Navbar } from '../components'
+import { Navbar, Slider } from '../components'
 
 const Home = () => {
   return (
     <div className='w-full'>
-      <Navbar />
+
+      <div className="w-full">
+        <Navbar />
+      </div>
+      
+      <div className="w-full">
+        <Slider />
+      </div>
     </div>
   )
 }
