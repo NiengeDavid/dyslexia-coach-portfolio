@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Slider, About, Featured } from '../components'
+import { Navbar, Slider, About, Featured ,Services} from '../components'
 
 const Home = () => {
   return (
@@ -19,6 +19,10 @@ const Home = () => {
 
       <div className="w-full">
         <Featured />
+      </div>
+     
+      <div className="w-full">
+        <Services />
       </div>
 
     </div>
