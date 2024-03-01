@@ -9,7 +9,7 @@ import spotify from "../Assets/Spotify.svg";
 const Featured = () => {
   return (
     <>
-      <div className="flex flex-col w-full my-[70px] lg:mx-[80px]">
+      <div className="flex flex-col w-full my-[50px] lg:mx-[80px]">
         {/* Title */}
         <div className="mb-[60px] lg:mt-[4rem]">
           <h1 className="text-[#006273] font-extrabold text-4xl text-center lg:text-5xl lg:pr-[6rem]">
