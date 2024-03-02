@@ -10,8 +10,8 @@ import spotify from "../Assets/Spotify.svg";
 const Partners = () => {
     return (
         <>
-           <div className="lg:bg-[#EDFAFC] lg:mx-[11rem] rounded-[2rem]"> 
-           <div className="text-center px-[50px] mt-[3rem] mb-[4rem] lg:mt-[-15px] lg:pt-[40px]  lg:mb-[0rem]">
+           <div className="lg:bg-[#EDFAFC] lg:mx-[11rem]  rounded-[2rem]"> 
+           <div className="text-center px-[50px] mt-[3rem] mb-[4rem] lg:mt-[-0.2px] lg:pt-[40px]  lg:mb-[0rem]">
                 <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
                     Partners
                 </h1>

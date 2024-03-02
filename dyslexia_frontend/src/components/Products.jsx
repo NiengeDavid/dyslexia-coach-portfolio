@@ -4,6 +4,8 @@ import YellowShirt from '../Assets/yellow shirt.jpg';
 import bible from '../Assets/Bible.jpg';
 import pink from '../Assets/Pink-bg.jpg';
 import star from '../Assets/Star.jpg';
+import ellispegray from '../Assets/product_ellipse_1.png';
+import ellispegreen from '../Assets/product_ellipse_2.png';
 
 const Products = () => {
     return (
@@ -17,9 +19,9 @@ const Products = () => {
             <div className="">
                 {/* Card */}
                 {/* Fatima's Book */}
-                <div className="mx-[1rem] my-[3rem] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem]">
+                <div className="mx-[1rem] my-[3rem] lg:relative z-[1] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem] lg:mx-0 ">
                   {[...Array(4).keys()].map((index) => (
-                    <div className="max-w-md mb-[2.5rem] mx-[1rem] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="max-w-md mb-[2.5rem] mx-[1rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img
                                 className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]"
@@ -65,12 +67,14 @@ const Products = () => {
                         </div>
                     </div>
                     ))}
+
+                   <div class=" hidden lg:block lg:absolute lg:inset-0 z-[-1] lg:mt-[-180px]  lg:left-[1100px]">
+                     <img src={ellispegreen} className="lg:absolute w-[550px] z-[1] lg:inset-0  lg:mt-[60px]" alt="Second Image"/>
+                      <img src={ellispegray} className="lg:absolute lg:inset-0  w-[550px] lg:mt-[-80px]" alt="First Image"/>
+                    </div>
                 </div>
 
-                <div>
-                    <img src=""/>
-                    <img src=""/>
-                </div>
+                
             </div>
         </>
     );

@@ -1,13 +1,13 @@
 import React from "react";
 import adhd from '../Assets/ADHD.jpg';
-import ellispegray from '../Assets/Ellipse 1.jpg';
-import ellispegreen from '../Assets/Ellipse 3.jpg';
+import ellispegray from '../Assets/Ellipse_2.png';
+import ellispegreen from '../Assets/Ellipse_3.png';
 
 const Services = () => {
     const Index = 6
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <div className="text-center px-[50px] lg: ">
           <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
             Services I offer
@@ -21,11 +21,11 @@ const Services = () => {
         </div>
 
         {/* Card */}
-        <div className=" mx-[1rem] my-[3rem] lg:grid lg:grid-cols-3 lg:gap-4 lg:my-[4.5rem]">
+        <div className=" lg:relative  my-[3rem] px-[2rem] z-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:my-[4.5rem] bg-transparent">
             {[...Array(6).keys()].map((index) => (
 
            
-          <div className="max-w-md  mb-[2.5rem] mx-[1rem]  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+          <div className="max-w-md  mb-[2.5rem] mx-[1rem]   border bg-transparent border-gray-200 rounded-lg shadow">
               <a href="#">
                 <img
                 className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]  "
@@ -69,7 +69,16 @@ const Services = () => {
               </div>
             </div>
              ))}
-        </div>
+
+                  <div class=" hidden lg:block lg:absolute lg:inset-0  z-[-1] lg:mt-[350px]  ">
+                  <img src={ellispegreen} className="lg:absolute w-[370px] z-[1] lg:inset-0  lg:mt-[150px]" alt="Second Image"/>
+                   <img src={ellispegray} className="lg:absolute lg:inset-0  w-[370px] " alt="First Image"/>
+                   
+                  </div>
+               
+          </div>
+
+
 
       </div>
     </>
