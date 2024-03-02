@@ -3,7 +3,7 @@ import { Navbar, Slider, About, Featured ,Services, Courses, Products,Partners,F
 
 const Home = () => {
   return (
-    <div className='w-full overflow-x-hidden'>
+    <div className='w-full overflow-x-hidden md:justify-center'>
 
       <div className="w-full">
         <Navbar />
@@ -29,7 +29,7 @@ const Home = () => {
         <Courses />
       </div>
 
-      <div className="w-full">
+      <div className="w-full ">
         <Products />
       </div>
 

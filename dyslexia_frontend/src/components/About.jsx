@@ -63,7 +63,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className=" hidden lg:flex lg:justify-center lg:mt-[-6.5rem]  ">
+      <div className=" hidden lg:flex lg:justify-center lg:mt-[-9rem]  ">
         <svg
           className=""
           width="1200"
