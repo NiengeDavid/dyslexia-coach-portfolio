@@ -1,7 +1,4 @@
 import React from "react";
-import email from '../Assets/Email.svg';
-import facebook from '../Assets/facebook.svg';
-import youtube from '../Assets/Youtube.svg';
 import ellispegray from '../Assets/footer_ellipse_1.png';
 import ellispegreen from '../Assets/footer_ellipse_2.png';
 
@@ -10,31 +7,32 @@ const Contact = () => {
     return (
         <>
            
-        <section  className=" pt-[50px] bg-[#156760] mt-[50px] lg:relative lg:z-[-1]  lg:flex lg:pt-[150px]">
-          <div className="py-8 px-4 mx-auto max-w-3xl lg:relative lg:z-[1]">
+        <section  className=" pt-[50px] bg-[#156760] mt-[50px] lg:relative   lg:flex lg:pt-[150px]">
+          <div className="py-8 px-4 mx-auto max-w-3xl  lg:z-[]">
             <h2 className="mb-7 text-4xl tracking-tight font-extrabold text-white ">Send me a Message</h2>
             <p className="mb-12  font-light  text-[#D1D5DB]  sm:text-xl lg:mb-8 ">Got a message for me? Want to send feedback about a beta feature? Need details about our Business plan? Let me know. &darr;</p>
             
             <form action="#" className="space-y-8 max-w-xl">
               <div>
                 <input type="text" id="name" className="shadow-3xl h-[55px]
-                 bg-[#008E82] border border-white-300 text-white
+                 bg-[#008E82]  text-white
                   text-sm rounded-lg  block w-full p-2.5 placeholder:text-white  lg:h-[50px] lg:w-[600px]" placeholder="Your name" required/>
               </div>
               <div>
                 <input type="email" id="email" className=" h-[55px]
-                 bg-[#008E82] border border-white-300 text-white shadow-3xl
+                 bg-[#008E82]  text-white shadow-3xl
                   text-sm rounded-lg  block w-full p-2.5 placeholder:text-white lg:h-[50px] lg:w-[600px]" placeholder="Your Email" required/>
               </div>
               <div>
                 <input type="text" id="subject" className=" h-[55px]
-                 bg-[#008E82] border border-white-300 text-white shadow-3xl
+                 bg-[#008E82]  text-white shadow-3xl
                   text-sm rounded-lg  block w-full p-2.5 placeholder:text-white lg:h-[50px] lg:w-[600px]" placeholder="Subject" required/>
               </div>
               <div class="sm:col-span-2">
-                <textarea id="message" rows="6" className="block p-2.5 w-full shadow-3xl text-sm text-white bg-[#008E82] rounded-lg  border border-gray-300 focus:ring-white lg:w-[600px]" placeholder="Your Message" required></textarea>
+                <textarea id="message" rows="6" className="block p-2.5 w-full shadow-3xl text-sm text-white
+                 bg-[#008E82] rounded-lg  focus:ring-white lg:w-[600px]" placeholder="Your Message" required></textarea>
               </div>
-              <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#51CAC0] sm:w-fit hover:bg-[#006273] focus:ring-4 focus:outline-none focus:ring-gray-300">Send</button>
+              <button type="submit" className="py-3 px-6 text-sm font-medium text-center text-white rounded-lg bg-[#51CAC0] sm:w-fit hover:bg-[#006273] focus:ring-4 focus:outline-none focus:ring-gray-300">Send</button>
             </form>
           </div>
 
@@ -103,7 +101,7 @@ const Contact = () => {
                 </p> 
           </div>
 
-          <div class=" hidden lg:block lg:absolute lg:inset-0  z-[-1] lg:mt-[5960px]  ">
+          <div class=" hidden lg:block lg:absolute lg:inset-0  z-[0] lg:mt-[5960px]  ">
                   <img src={ellispegreen} className="lg:absolute w-[400px] z-[1] lg:inset-0  lg:mt-[150px]" alt="Second Image"/>
                   <img src={ellispegray} className="lg:absolute lg:inset-0  w-[400px] " alt="First Image"/>
                    

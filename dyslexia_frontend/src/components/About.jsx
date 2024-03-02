@@ -5,11 +5,13 @@ import Actor from "../Assets/actor.jpg";
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:my-[20px]">
+      <div className="flex flex-col lg:flex-row lg:my-[40px]">
         {/* Title and paragraph */}
         <div className=" mt-[40px] lg:w-1/2  lg:mx-[80px] ">
           <div className="lg:ml-[150px]">
-            <div className=" mx-[25px] bg-gradient-to-r from-[#006273] to-[#006273] rounded-bl-[15px] rounded-tr-[15px] lg:w-[50rem] lg:relative lg:h-[50px] lg:rounded-none lg:bg-gradient-to-r from-[#006273] to-[#c0bfbf]">
+            <div className=" mx-[25px] bg-gradient-to-r from-[#006273] rounded-bl-[15px]
+             rounded-tr-[15px] lg:w-[50rem] lg:relative lg:h-[50px]
+              lg:rounded-none lg:bg-gradient-to-r from-[#006273] lg:mx-[10px]">
               <h1 className="text-[#5FD5E4] text-2xl leading-loose font-bold py-6 px-5 text-start lg:text-3xl lg:py-[4px]">
                 Dyslexia Coach & Founder of Dyslexia Help Africa
               </h1>

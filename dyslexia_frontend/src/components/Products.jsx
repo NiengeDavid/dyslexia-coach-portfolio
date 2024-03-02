@@ -1,8 +1,5 @@
 import React from "react";
 import Fatti_Book from '../Assets/FatimaBook.jpg';
-import YellowShirt from '../Assets/yellow shirt.jpg';
-import bible from '../Assets/Bible.jpg';
-import pink from '../Assets/Pink-bg.jpg';
 import star from '../Assets/Star.jpg';
 import ellispegray from '../Assets/product_ellipse_1.png';
 import ellispegreen from '../Assets/product_ellipse_2.png';
@@ -21,7 +18,7 @@ const Products = () => {
                 {/* Fatima's Book */}
                 <div className="mx-[1rem] my-[3rem] lg:relative z-[1] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem] lg:mx-0 ">
                   {[...Array(4).keys()].map((index) => (
-                    <div className="max-w-md mb-[2.5rem] mx-[1rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="max-w-md mb-[2.5rem]  mx-[1rem] bg-white border border-solid border-[#30D5C866] shadow-[productShadow] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img
                                 className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]"
@@ -42,9 +39,17 @@ const Products = () => {
 
                             <div className="flex justify-between items-center">
                                 <span className="text-2xl font-bold">N5,999</span>
+
+                                <span className="
+                                lg:bg-gradient-to-r from-[#214845] from-0% via-[#20887F] via-70%  to-[#1FE9D7] to-90%
+                                rounded-xl    
+                                lg:py-0.5  lg:px-0.5">
                                 <a
                                     href="#"
-                                    className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white bg-[#006273] rounded-lg lg:text-[#006273]  lg:text-[18px]  lg:border lg:border-[#006273] lg:bg-white"
+                                    className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white bg-[#006273] rounded-lg 
+                                     lg:text-[#006273]  lg:text-[18px]  lg:border-2
+                                     lg:border-[] lg:border-solid
+                                       lg:bg-white"
                                 >
                                     <span className="lg:text-bold">Buy <span className="lg:hidden">  here </span></span>
                                     <svg
@@ -63,6 +68,8 @@ const Products = () => {
                                         />
                                     </svg>
                                 </a>
+                                </span>
+                               
                             </div>
                         </div>
                     </div>
