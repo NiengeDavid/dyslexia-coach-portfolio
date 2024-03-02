@@ -13,7 +13,7 @@ const Services = () => {
             Services I offer
           </h1>
 
-          <p className="pt-[45px]  text-[#73A4A0] leading-loose text-[18px] lg:pt-[25px]">
+          <p className="pt-[45px]  text-[#73A4A0] leading-loose text-[18px] lg:pt-[25px] lg:text-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo
             facilis aliquam alias accusamus ad fugiat sequi non cupiditate, a
             nulla officiis.
@@ -70,6 +70,7 @@ const Services = () => {
             </div>
              ))}
         </div>
+
       </div>
     </>
   );
