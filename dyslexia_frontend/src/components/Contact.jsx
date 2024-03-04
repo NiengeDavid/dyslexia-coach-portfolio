@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <>
            
-        <section  className=" pt-[50px] bg-[#156760] mt-[50px] lg:relative   lg:flex lg:pt-[150px]">
+        <section id="contact" className=" pt-[50px] bg-[#156760] mt-[50px] lg:relative   lg:flex lg:pt-[150px]">
           <div className="py-8 px-4 mx-auto max-w-3xl  lg:z-[]">
             <h2 className="mb-7 text-4xl tracking-tight font-extrabold text-white ">Send me a Message</h2>
             <p className="mb-12  font-light  text-[#D1D5DB]  sm:text-xl lg:mb-8 ">Got a message for me? Want to send feedback about a beta feature? Need details about our Business plan? Let me know. &darr;</p>

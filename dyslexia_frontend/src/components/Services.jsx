@@ -7,7 +7,7 @@ const Services = () => {
     const Index = 6
   return (
     <>
-      <div className="flex flex-col ">
+      <div className="flex flex-col " id="services">
         <div className="text-center px-[50px] lg: ">
           <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
             Services I offer

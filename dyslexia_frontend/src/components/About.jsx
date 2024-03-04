@@ -5,7 +5,7 @@ import Actor from "../Assets/actor.jpg";
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row lg:my-[40px]">
+      <div className="flex flex-col lg:flex-row lg:my-[40px] " id="about">
         {/* Title and paragraph */}
         <div className=" mt-[40px] lg:w-1/2  lg:mx-[80px] ">
           <div className="lg:ml-[150px]">

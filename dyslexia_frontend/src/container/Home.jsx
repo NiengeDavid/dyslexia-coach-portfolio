@@ -1,9 +1,10 @@
 import React from 'react';
 import { Navbar, Slider, About, Featured ,Services, Courses, Products,Partners,Followers,Contact} from '../components'
 
+
 const Home = () => {
   return (
-    <div className='w-full overflow-x-hidden md:justify-center'>
+    <div className='w-full overflow-x-hidden md:justify-center' id='home'>
 
       <div className="w-full">
         <Navbar />
