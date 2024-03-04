@@ -18,8 +18,8 @@ const Featured = () => {
         </div>
 
         {/*Logos*/}
-        <div className="grid grid-cols-2 md:grid-cols-6 mb-[2rem] px-[4rem] gap-4 justify-center lg:px-[3rem]  lg:grid-cols-6 lg:mr-[6rem] lg:mt-[2rem]">
-          <span className="mb-[2rem] w-[200px]">
+        <div className="grid grid-cols-2  mb-[2rem] px-[4rem] gap-4 justify-center lg:px-[3rem] md:mx-[90px] lg:grid-cols-6 lg:mr-[6rem] lg:mt-[2rem]">
+          <span className="mb-[2rem] w-[200px] ">
             <img src={airbnb} alt="" />
           </span>
           <span className="w-[200px]">

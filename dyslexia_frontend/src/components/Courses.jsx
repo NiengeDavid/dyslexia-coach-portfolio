@@ -8,7 +8,7 @@ const Courses = () => {
       <div className="flex flex-col mb-[5rem] ">
         <div className="lg:flex">
           <div className="px-[2rem] ">
-            <div className="lg:w-[40rem] lg:pl-[6rem]">
+            <div className="md:px-[2rem] lg:w-[40rem] lg:pl-[6rem]">
               <h1
                 className="text-[#184348] text-2xl font-extrabold leading-loose
              lg:text-3xl lg:mt-[1rem] "
@@ -22,7 +22,7 @@ const Courses = () => {
               </p>
             </div>
 
-            <div className="px-[8rem] lg:px-[7rem]">
+            <div className="px-[8rem] md:px-[15rem] lg:px-[7rem]">
               <a
                 href="#"
                 className="inline-flex items-center w-[15rem]  px-8 py-4 text-sm font-medium text-center text-white bg-gradient-to-r from-regalGreen from-30% via-gris via-40% to-green to-81%  rounded-[15px] shadow-2xl lg:pl-[-5rem]"
@@ -51,7 +51,7 @@ const Courses = () => {
             <img
               src={children}
               alt=" children"
-              className="w-[30rem] h-[20rem] lg:w-[65rem] lg:h-[22rem]"
+              className="w-[30rem] h-[20rem] md:w-[40rem] lg:w-[65rem] lg:h-[22rem]"
             />
           </div>
         </div>
@@ -59,7 +59,7 @@ const Courses = () => {
         {/* Second Picture*/}
         <div className="lg:flex lg:my-[7rem]">
           <div className=" px-[2rem] py-[3rem] ">
-            <div className="lg:w-[40rem] lg:pl-[6rem]">
+            <div className=" md:px-[2rem] lg:w-[40rem] lg:pl-[6rem]">
               <h1
                 className="text-[#184348] text-2xl font-extrabold leading-loose
                 lg:text-3xl lg:mt-[1rem] "
@@ -73,7 +73,7 @@ const Courses = () => {
               </p>
             </div>
 
-            <div className="pr-[2rem] mt-4 pl-[0.3rem] lg:pl-[6.4rem]">
+            <div className="pr-[2rem] mt-4 pl-[0.3rem] md:px-[140px] lg:pl-[102.4px]">
               <a
                 href="#"
                 className="inline-flex items-center w-[12rem] mr-[2rem]  px-9 py-4 text-sm font-medium text-center text-white bg-gradient-to-r from-regalGreen from-30% via-gris via-40% to-green to-81%  rounded-[15px] shadow-2xl"
@@ -105,11 +105,11 @@ const Courses = () => {
           </div>
           </div>
 
-          <div className="flex justify-center mt-[2rem] lg:order-last lg:mt-0 lg:ml-[6rem] ">
+          <div className="flex justify-center mt-[2rem] lg:order-last lg:mt-0 lg:ml-[3rem] lg:mr-[5rem] ">
             <img
               src={teacher}
               alt=" teacher"
-              className="w-[30rem] h-[20rem] lg:w-[65rem] lg:h-[22rem]"
+              className="w-[30rem] h-[20rem] md:w-[40rem] lg:w-[68rem] lg:h-[22rem]"
             />
           </div>
         </div>

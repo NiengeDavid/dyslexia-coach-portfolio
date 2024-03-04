@@ -30,7 +30,7 @@ const Contact = () => {
               </div>
               <div class="sm:col-span-2">
                 <textarea id="message" rows="6" className="block p-2.5 w-full shadow-3xl text-sm text-white
-                 bg-[#008E82] rounded-lg  focus:ring-white lg:w-[600px]" placeholder="Your Message" required></textarea>
+                 bg-[#008E82] rounded-lg  focus:ring-white lg:w-[600px] placeholder:text-white" placeholder="Your Message" required></textarea>
               </div>
               <button type="submit" className="py-3 px-6 text-sm font-medium text-center text-white rounded-lg bg-[#51CAC0] sm:w-fit hover:bg-[#006273] focus:ring-4 focus:outline-none focus:ring-gray-300">Send</button>
             </form>

@@ -9,12 +9,12 @@ const Followers = () => {
         <>
         <div className="flex flex-col">
 
-            <div className="text-center px-[20px] mt-[8rem] lg: ">
+            <div className="text-center px-[20px] mt-[8rem] ">
               <h1 className="text-[#5FD5E4] font-extrabold text-4xl lg:text-5xl">
                 Subscribe for daily tips
               </h1>
 
-              <p className="pt-[45px] text-start  leading-loose text-[18px] lg:pt-[25px] lg:text-[20px] lg:text-center lg:px-[300px] lg:font-thin">
+              <p className="pt-[45px] text-start  leading-loose text-[18px] md:px-[20px] lg:pt-[25px] lg:text-[20px] lg:text-center lg:px-[300px] lg:font-thin">
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo
                  facilis aliquam alias accusamus ad fugiat sequi non cupiditate, a
                  nulla officiis.
@@ -22,7 +22,7 @@ const Followers = () => {
             </div>
 
 
-            <div className="px-[20px] mb-[20px] lg:px-[100px] lg:flex lg:justify-center lg:w-full lg:mb-[4px]">
+            <div className="px-[20px] mb-[20px] md:mx-[30px] lg:px-[100px] lg:flex lg:justify-center lg:w-full lg:mb-[4px]">
 
               <div className="mt-3  py-7 flex lg:mt-7 ">
                 <img src={email} alt="" className="absolute py-[18px] px-[20px] w-[65px]"/>
@@ -32,16 +32,16 @@ const Followers = () => {
 
               <a
                 href="#"
-                className="inline-flex items-center w-full h-[60px] px-[190px] py-4 text-sm font-medium text-center text-white bg-[#30D5C8] rounded-[15px] shadow-lg border border-[#30D5C8] lg:pl-[-5rem] lg:mt-[56px] lg:rounded-r-[15px] lg:rounded-l-none lg:w-[130px] lg:px-[30px]">
+                className="inline-flex items-center w-full h-[60px] px-[190px] py-4 text-sm font-medium text-center text-white bg-[#30D5C8] rounded-[15px] shadow-lg border border-[#30D5C8] md:text-center md:px-[300px] lg:pl-[-5rem] lg:mt-[56px] lg:rounded-r-[15px] lg:rounded-l-none lg:w-[130px] lg:px-[30px]">
                 <span className="tracking-loose">Subscribe </span>
               </a>
             </div>
 
-            <p className="font-light mt-[30px] mx-[20px] text-start lg:text-center lg:mt-[1px]">
+            <p className="font-light mt-[30px] mx-[20px] text-start  md:text-center lg:text-center lg:mt-[1px]">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, expedita?
               </p>
 
-           <div className="flex space-x-6 mt-[50px] lg:justify-center lg:mt-[40px]">
+           <div className="flex space-x-6 mt-[50px] md:justify-center md:space-x-9 lg:justify-center lg:mt-[40px]">
            <div className=" mb-[30px] flex  mx-[20px]">
               {/* FaceBook */}
             <img src={facebook} alt="" className="absolute pt-[25px] pl-[20px] w-[40px] lg:w-[35px] lg:mt-[-9px] lg:ml-[14px]"/>

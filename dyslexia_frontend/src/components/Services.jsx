@@ -21,7 +21,7 @@ const Services = () => {
         </div>
 
         {/* Card */}
-        <div className=" lg:relative  my-[3rem] px-[2rem] z-1 lg:grid lg:grid-cols-3 lg:gap-4 lg:my-[4.5rem] bg-transparent">
+        <div className=" lg:relative  my-[3rem] px-[2rem] z-1  lg:grid lg:grid-cols-3 lg:gap-3 lg:my-[4.5rem] bg-transparent">
             {[...Array(6).keys()].map((index) => (
 
            
@@ -47,8 +47,8 @@ const Services = () => {
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white bg-[#006273] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
+                  className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white bg-[#006273] rounded-lg hover:bg-white hover:text-[#006273] hover:border hover:border-[#006273] focus:ring-4 focus:outline-non focus:ring-[#006273]"
+                   >
                  <span className=""> Access Here</span>
                   <svg
                     className="rtl:rotate-180 w-3.5 h-3.5 ms-2"

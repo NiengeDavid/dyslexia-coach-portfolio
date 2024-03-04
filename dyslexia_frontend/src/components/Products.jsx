@@ -16,7 +16,7 @@ const Products = () => {
             <div className="">
                 {/* Card */}
                 {/* Fatima's Book */}
-                <div className="mx-[1rem] my-[3rem] lg:relative z-[1] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem] lg:mx-0 ">
+                <div className="mx-[1rem] my-[3rem] lg:relative z-[1] md:mx-[150px] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem] lg:mx-0 ">
                   {[...Array(4).keys()].map((index) => (
                     <div className="max-w-md mb-[2.5rem]  mx-[1rem] bg-white border border-solid border-[#30D5C866] shadow-[productShadow] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
