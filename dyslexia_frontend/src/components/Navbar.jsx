@@ -1,9 +1,11 @@
 import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
+import {Link as ScrollLink} from 'react-scroll'
 
 const Navbar = () => {
   return (
     <div>
-        <nav className="fixed w-full z-20 top-0 start-0 ">
+        <nav className="fixed w-full z-20 top-0 start-0 " >
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="My Logo" />
@@ -21,16 +23,56 @@ const Navbar = () => {
                 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-inherit">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white bg-[#5FD5E4] rounded md:bg-transparent md:text-[#5FD5E4] md:p-0" aria-current="page">Home</a>
+                            <Link to="/home">
+                                <ScrollLink 
+                                to='home'
+                                spy={true}
+                                smooth={true}
+                                duration={400}
+                                >
+                                 <a href="#" className="block py-2 px-3 text-white bg-[#5FD5E4] rounded md:bg-transparent md:text-[#5FD5E4] md:p-0" aria-current="page">Home</a>
+                                </ScrollLink>
+                                </Link>
+                            
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">About</a>
+                            <Link to="/about">
+                                <ScrollLink
+                                to='about'
+                                spy={true}
+                                smooth={true}
+                                duration={400}> 
+                                 <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">About</a>
+                                
+                                </ScrollLink>    
+                            </Link>
+                            
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">Services</a>
+                            <Link to="/services">
+                                <ScrollLink
+                                  to='services'
+                                  spy={true}
+                                  smooth={true}
+                                  duration={400} 
+                                >
+                                    <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">Services</a>
+                                </ScrollLink>
+                            </Link>
+                            
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">Contact</a>
+                        <Link to="/services">
+                                <ScrollLink
+                                  to='contact'
+                                  spy={true}
+                                  smooth={true}
+                                  duration={400} 
+                                >
+                                    <a href="#" className="block py-2 px-3 text-white rounded hover:bg-[#5FD5E4] md:hover:bg-transparent md:hover:text-[#5FD5E4] md:p-0">Contact</a>
+                                </ScrollLink>
+                            </Link>
+                            
                         </li>
                     </ul>
                 </div>
