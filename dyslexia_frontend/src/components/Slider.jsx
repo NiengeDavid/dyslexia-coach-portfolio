@@ -1,60 +1,58 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from "react-feather";
-import { Each } from './Each';
+import { Carousel } from 'flowbite-react';
 
-const Carousel = ({ slides, autoSlide = true, autoSlideInterval = 3000 }) => {
-  const [curr, setCurr] = useState(0);
+const customTheme = {
+  "root": {
+    "base": "relative h-full w-full",
+    "leftControl": "absolute top-0 left-0 flex h-full items-center justify-center px-4 focus:outline-none",
+    "rightControl": "absolute top-0 right-0 flex h-full items-center justify-center px-4 focus:outline-none"
+  },
+  "indicators": {
+    "active": {
+      "off": "bg-white hover:bg-white/50 dark:bg-gray-800/50 dark:hover:bg-gray-800",
+      "on": "bg-[#5FD5E4] dark:bg-gray-800"
+    },
+    "base": "h-1 w-4 ",
+    "wrapper": "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3"
+  },
+  "item": {
+    "base": "absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
+    "wrapper": {
+      "off": "w-full flex-shrink-0 transform cursor-default snap-center",
+      "on": "w-full flex-shrink-0 transform cursor-grab snap-center"
+    }
+  },
+  "control": {
+    "base": "inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+    "icon": "h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+  },
+  "scrollContainer": {
+    "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
+    "snap": "snap-x"
+  }
+}
 
-  const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
-  const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
-  useEffect(() => {
-    if (!autoSlide) return;
-    const slideInterval = setInterval(next, autoSlideInterval);
-    return () => clearInterval(slideInterval);
-  }, []);
-
-  const slideWidth = `${100 / slides.length}%`;
-
-  const dataArray = Object.values(slides);
+const Slider = ({ slides }) => {
 
   return (
-    <div className='relative overflow-hidden'>
-      <div className="flex transition-transform ease-in-out duration-500" style={{ transform: `translateX(-${curr * 100}%)` }}>
-        {dataArray.map((slide, index) => (
-          <div key={index} className="w-full h-96" style={{ width: slideWidth }}>
-            <Each of={slide} render={(item, index) =>
-              <div className="w-full h-96">
-                <img src={item.image.asset.url} alt={item.alt} className="object-cover w-full h-full" />
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-gray-900 bg-opacity-50">
-                  <h2 className="text-center">{item.hint}</h2>
-                  <h3 className="text-center">{item.alt}</h3>
-                  <p className="text-center">{item.solution}</p>
-                </div>
-              </div>
-            } />
-            
-          </div>
-          
-        ))}
-      </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button onClick={prev} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
-          <ChevronLeft />
-        </button>
-        <button onClick={next} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
-          <ChevronRight />
-        </button>
-      </div>
-      <div className='absolute bottom-4 right-0 left-0'>
-        <div className='flex items-center justify-center gap-2'>
-          {dataArray.map((_, index) => (
-            <div key={index} className={`transition-all w-1.5 h-1.5 bg-white rounded-full ${curr === index ? "p-0.5" : "bg-opacity-50"}`} />
-          ))}
+    <div className="h-96 sm:h-64 xl:h-[659px] 2xl:h-[659px]">
+      <Carousel slideInterval={5000} theme={customTheme}>
+      {slides.map((slide, index) => (
+        <div key={index} className="w-full h-96 md:h-full">
+            <img src={slide.image.asset.url} alt={slide.alt} className="object-cover w-full h-full" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center space-y-2 text-white bg-gray-900 bg-opacity-50 md:pt-5 lg:pt-0">
+              <h2 className="text-center font-light text-white md:text-lg">{slide.hint}</h2>
+              <h3 className="text-center text-2xl font-bold px-4 md:text-3xl lg:text-5xl">{slide.alt}</h3>
+              <p className="pt-3 text-center font-bold text-[#5FD5E4] md:text-lg lg:pt-5">{slide.solution}</p>
+            </div>
         </div>
-      </div>
+      ))}
+      </Carousel>
     </div>
   );
 };
 
-export default Carousel;
+export default Slider;

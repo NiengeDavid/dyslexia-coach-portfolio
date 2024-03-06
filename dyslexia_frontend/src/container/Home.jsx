@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Slider, SliderFeeds, About, Featured ,Services, Courses, Products, Partners, Followers, Contact} from '../components';
+import { NavFeed, Navbar, Slider, SliderFeeds, About, Featured ,Services, Courses, Products, Partners, Followers, Contact} from '../components';
 
 
 const Home = () => {
@@ -8,14 +8,14 @@ const Home = () => {
     <div className='w-full overflow-x-hidden md:justify-center' id='home'>
 
       <div className="w-full">
-        <Navbar />
+        <NavFeed />
       </div>
       
       <div className="w-full">
         <SliderFeeds />
       </div>
 
-      <div className="w-full">
+      <div className="w-full mt-7 lg:mt-0">
         <About />
       </div>
 

@@ -25,7 +25,7 @@ const Services = () => {
             {[...Array(6).keys()].map((index) => (
 
            
-          <div className="max-w-md  mb-[2.5rem] mx-[1rem]   border bg-transparent border-gray-200 rounded-lg shadow">
+          <div key={index} className="max-w-md  mb-[2.5rem] mx-[1rem]   border bg-transparent border-gray-200 rounded-lg shadow">
               <a href="#">
                 <img
                 className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]  "
@@ -59,9 +59,9 @@ const Services = () => {
                   >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
@@ -70,7 +70,7 @@ const Services = () => {
             </div>
              ))}
 
-                  <div class=" hidden lg:block lg:absolute lg:inset-0  z-[-1] lg:mt-[350px]  ">
+                  <div className=" hidden lg:block lg:absolute lg:inset-0  z-[-1] lg:mt-[350px]  ">
                   <img src={ellispegreen} className="lg:absolute w-[370px] z-[1] lg:inset-0  lg:mt-[150px]" alt="Second Image"/>
                    <img src={ellispegray} className="lg:absolute lg:inset-0  w-[370px] " alt="First Image"/>
                    

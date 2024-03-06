@@ -18,7 +18,7 @@ const Products = () => {
                 {/* Fatima's Book */}
                 <div className="mx-[1rem] my-[3rem] lg:relative z-[1] md:mx-[150px] lg:grid lg:grid-cols-4 lg:gap-2 lg:my-[4rem] lg:mx-0 ">
                   {[...Array(4).keys()].map((index) => (
-                    <div className="max-w-md mb-[2.5rem]  mx-[1rem] bg-white border border-solid border-[#30D5C866] shadow-[productShadow] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div key={index} className="max-w-md mb-[2.5rem]  mx-[1rem] bg-white border border-solid border-[#30D5C866] shadow-[productShadow] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <a href="#">
                             <img
                                 className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]"
@@ -75,7 +75,7 @@ const Products = () => {
                     </div>
                     ))}
 
-                   <div class=" hidden lg:block lg:absolute lg:inset-0 z-[-1] lg:mt-[-180px]  lg:left-[1100px]">
+                   <div className=" hidden lg:block lg:absolute lg:inset-0 z-[-1] lg:mt-[-180px]  lg:left-[1100px]">
                      <img src={ellispegreen} className="lg:absolute w-[550px] z-[1] lg:inset-0  lg:mt-[60px]" alt="Second Image"/>
                       <img src={ellispegray} className="lg:absolute lg:inset-0  w-[550px] lg:mt-[-80px]" alt="First Image"/>
                     </div>

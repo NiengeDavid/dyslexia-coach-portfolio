@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { client } from "../client";
 import { slider } from "../utils/data";
 import {Slider} from '../components';
+
+
 const SliderFeeds = () => {
     const [feed, setFeed] = useState([]);
 
