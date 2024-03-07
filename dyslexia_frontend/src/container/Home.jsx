@@ -5,7 +5,7 @@ import { NavFeed, Navbar, Slider, SliderFeeds, About, Featured ,Services, Course
 
 const Home = () => {
   return (
-    <div className='w-full overflow-x-hidden md:justify-center' id='home'>
+    <div className='w-full overflow-x-hidden md:justify-center' id='Home'>
 
       <div className="w-full">
         <NavFeed />

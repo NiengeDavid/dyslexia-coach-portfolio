@@ -6,7 +6,7 @@ import ellispegreen from '../Assets/product_ellipse_2.png';
 
 const Products = () => {
     return (
-        <>
+        <section id="Products">
             <div className="text-center px-[50px] mb-[8rem] lg:mt-[-15px] ">
                 <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
                     Our products
@@ -83,7 +83,7 @@ const Products = () => {
 
                 
             </div>
-        </>
+        </section>
     );
 };
 

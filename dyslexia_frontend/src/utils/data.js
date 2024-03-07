@@ -9,7 +9,7 @@ export const slider = `*[_type == "slider"] | order(_createdAt desc) {
     solution
 }`
 
-export const navbar = `*[_type == "navbar"] {
+export const navfeed = `*[_type == "navbar"] {
   logo {
     asset -> {
       url
@@ -17,4 +17,8 @@ export const navbar = `*[_type == "navbar"] {
   },
   yourname,
   button
+}`
+
+export const menu = `*[_type == "menu"] | order(_createdAt asc) {
+  item,
 }`

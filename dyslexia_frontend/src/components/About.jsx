@@ -5,7 +5,7 @@ import Actor from "../Assets/actor.jpg";
 const About = () => {
   return (
     <>
-      <section className="bg-white" id="about">
+      <section className="bg-white" id="About">
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
               <div className="z-10 font-light text-gray-500 sm:text-lg">
                   <div className="mb-4 rounded-t-2xl rounded-br-2xl w-full py-2 px-4 shadow-black shadow-sm bg-[#006273] lg:shadow lg:bg-gradient-to-r lg:from-[#006273] md:to-white/50 lg:bg-opacity-30 lg:rounded-b-none lg:w-fit lg:whitespace-nowrap lg:mt-14">

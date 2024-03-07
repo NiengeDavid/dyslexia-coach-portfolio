@@ -6,8 +6,8 @@ import ellispegreen from '../Assets/Ellipse_3.png';
 const Services = () => {
     const Index = 6
   return (
-    <>
-      <div className="flex flex-col " id="services">
+    <section id="Services">
+      <div className="flex flex-col " id="Services">
         <div className="text-center px-[50px] lg: ">
           <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
             Services I offer
@@ -81,7 +81,7 @@ const Services = () => {
 
 
       </div>
-    </>
+    </section>
   );
 };
 
