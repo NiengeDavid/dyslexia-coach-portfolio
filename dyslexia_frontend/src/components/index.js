@@ -10,4 +10,5 @@ export {default as Followers} from './Followers';
 export {default as Contact} from './Contact';
 export { default as SliderFeeds } from './SliderFeeds';
 export { default as NavFeed } from './NavFeed';
+export { default as AboutFeed } from './AboutFeed';
 

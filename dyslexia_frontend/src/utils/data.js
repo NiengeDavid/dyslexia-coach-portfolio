@@ -22,3 +22,25 @@ export const navfeed = `*[_type == "navbar"] {
 export const menu = `*[_type == "menu"] | order(_createdAt asc) {
   item,
 }`
+
+export const about = `*[_type == "about"] {
+  heading,
+  xlug,
+  mantra,
+  image1 {
+    asset -> {
+      url
+    }
+  },
+  image2 {
+    asset -> {
+      url
+    }
+  },
+  alt1,
+  alt2
+}`
+
+export const aboutMe = `*[_type == "aboutme"] | order(_createdAt asc) {
+  content,
+}`

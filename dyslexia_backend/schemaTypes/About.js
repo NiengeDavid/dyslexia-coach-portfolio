@@ -10,7 +10,7 @@ export default {
         },
         {
             name: 'xlug',
-            title: 'Xlug',
+            title: 'Coloured Part',
             type: 'string'
         },
         {
@@ -19,16 +19,30 @@ export default {
             type: 'string'
         },
         {
-            name: 'image',
-            title: 'Your Potrait',
+            name: 'image1',
+            title: 'Your Potrait1',
             type: 'image',
             option: {
                 hotspot: true
             }
         },
         {
-            name: 'alt',
-            title: 'Alt text',
+            name: 'alt1',
+            title: 'Alt text1',
+            type: 'string',
+            description: 'Alternative text for when image fails to load'
+        },
+        {
+            name: 'image2',
+            title: 'Your Potrait2',
+            type: 'image',
+            option: {
+                hotspot: true
+            }
+        },
+        {
+            name: 'alt2',
+            title: 'Alt text2',
             type: 'string',
             description: 'Alternative text for when image fails to load'
         },
