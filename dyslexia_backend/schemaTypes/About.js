@@ -46,5 +46,11 @@ export default {
             type: 'string',
             description: 'Alternative text for when image fails to load'
         },
+        {
+            name: 'p1',
+            title: 'First Paragraph',
+            type: 'string',
+            description: 'Paragraph will populate next to coloured part'
+        }
     ]
 }
