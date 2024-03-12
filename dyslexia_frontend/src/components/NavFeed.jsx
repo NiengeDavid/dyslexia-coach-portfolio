@@ -14,7 +14,7 @@ const NavFeed = () => {
       .fetch(query)
       .then((data) => {
         setFeed(data);
-        console.log(data);
+        //console.log(data);
       })
       .catch((error) => {
         console.log('Error fetching Navbar data:', error);
@@ -28,7 +28,7 @@ const NavFeed = () => {
       .fetch(query)
       .then((data) => {
         setNav(data);
-        console.log(data);
+        //console.log(data);
       })
       .catch((error) => {
         console.log('Error fetching Menu data:', error);

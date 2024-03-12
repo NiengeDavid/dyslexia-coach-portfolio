@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { client } from "../client";
 import { about, aboutMe } from "../utils/data";
-import  { About }  from ".";
+import  { About }  from "../components";
 
 const AboutFeed = () => {
   const [feed, setFeed] = useState([]);
@@ -14,10 +14,10 @@ const AboutFeed = () => {
       .fetch(query)
       .then((data) => {
         setFeed(data);
-        console.log(data);
+        //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching Navbar data:', error);
+        console.log('Error fetching About data:', error);
       });
   }, []);
 
@@ -28,10 +28,10 @@ const AboutFeed = () => {
       .fetch(query)
       .then((data) => {
         setDetails(data);
-        console.log(data);
+        //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching Menu data:', error);
+        console.log('Error fetching About Details data:', error);
       });
   }, []);
 

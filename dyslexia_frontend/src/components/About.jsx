@@ -1,6 +1,5 @@
 import React from "react";
 import Abstract from "../Assets/abstract.svg";
-import Actor from "../Assets/actor.jpg";
 
 const About = ( { aboutdata, aboutfeed } ) => {
   function mapDataToArray(data) {
@@ -25,20 +24,23 @@ const About = ( { aboutdata, aboutfeed } ) => {
                   <h2 className="text-4xl tracking-tight font-extrabold text-[#5FD5E4] shadow-black drop-shadow-lg">{item.heading}</h2>
                 </div>
                 <p className="mb-4 leading-relaxed font-extralight">
-                  <span className="text-[#006273]">{item.xlug}</span> 
+                  <span className="text-[#006273] pr-1">{item.xlug}</span>
                   {item.p1}
                 </p>
                 {bioFeed.map((item, index) => (
-                  <div className="w-full">
+                  <div key={index} className="w-full">
                     <p className="mb-4">{item.content}</p>
                   </div>
                 ))}
+                <p className="leading-relaxed font-semibold text-[#006273]">
+                  {item.mantra}
+                </p>
               </div>
             
                 
               <div className="grid grid-cols-2 gap-4 mt-8 lg:mt-1.5">
-                  <img className="w-full rounded-lg" src={item.image1.asset.url} alt="office content 1" />
-                  <img className="mt-4 w-full lg:mt-10 rounded-lg" src={item.image2.asset.url} alt="office content 2" />
+                  <img className="w-full rounded-lg" src={item.image1.asset.url} alt={item.alt1} />
+                  <img className="mt-4 w-full lg:mt-10 rounded-lg" src={item.image2.asset.url} alt={item.alt2} />
               </div>
             </div>
         ))}

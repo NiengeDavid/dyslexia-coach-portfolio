@@ -38,9 +38,25 @@ export const about = `*[_type == "about"] {
     }
   },
   alt1,
-  alt2
+  alt2,
+  p1
 }`
 
 export const aboutMe = `*[_type == "aboutme"] | order(_createdAt asc) {
   content,
+}`
+
+export const featured = `*[_type == "featured"] {
+  logo {
+    asset -> {
+      url
+    }
+  },
+  alt,
+  link
+}`
+
+export const sections =  `*[_type == "sections"] {
+  title,
+  description
 }`

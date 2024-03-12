@@ -16,6 +16,11 @@ export default {
             name: 'alt',
             title: 'Organisation Name',
             type: 'string'
+        },
+        {
+            name: 'link',
+            title: 'Link to Mention',
+            type: 'string'
         }
     ]
 }

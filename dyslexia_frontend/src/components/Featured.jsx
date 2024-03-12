@@ -1,44 +1,35 @@
 import React from "react";
-import airbnb from "../Assets/Airbnb.svg";
-import google from "../Assets/Google.svg";
-import mallichimp from "../Assets/mallichimp.svg";
-import mashable from "../Assets/Mashable.svg";
-import microsoft from "../Assets/Microsoft.svg";
-import spotify from "../Assets/Spotify.svg";
 
-const Featured = () => {
+const Featured = ({ data, title }) => {
+  function mapDataToArray(data) {
+    try {
+      return Object.keys(data).map((key) => data[key]);
+    } catch (error) {
+      console.error("An error occurred while mapping data:", error);
+      return [];
+    }
+  }
+
+  const logos = mapDataToArray(data)
+  const heading = mapDataToArray(title)
+
+
   return (
     <>
-      <div className="flex flex-col w-full my-[50px] lg:mx-[80px]">
-        {/* Title */}
-        <div className="mb-[60px] lg:mt-[4rem]">
-          <h1 className="text-[#006273] font-extrabold text-4xl text-center lg:text-5xl lg:pr-[6rem]">
-            Featured on
-          </h1>
-        </div>
-
-        {/*Logos*/}
-        <div className="grid grid-cols-2  mb-[2rem] px-[4rem] gap-4 justify-center lg:px-[3rem] md:mx-[90px] lg:grid-cols-6 lg:mr-[6rem] lg:mt-[2rem]">
-          <span className="mb-[2rem] w-[200px] ">
-            <img src={airbnb} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={google} alt="" />
-          </span>
-          <span className="mb-[2rem] w-[200px]">
-            <img src={microsoft} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={spotify} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={mallichimp} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={mashable} alt="" />
-          </span>
-        </div>
-      </div>
+      <section className="bg-white my-10">
+        {heading && (
+          <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+            <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight font-[Segoe UI] leading-tight text-center text-[#006273] md:text-4xl">{heading[1].title}</h2>
+            <div className="grid grid-cols-2 gap-8 text-[#73A4A0] md:gap-12 md:grid-cols-3 lg:grid-cols-6">
+                {logos.map((item, index) => (
+                  <a key={index} href={item.link} className="flex justify-center items-center transition-transform hover:duration-300 hover:transform hover:translate-y-1">
+                    <img src={item.logo.asset.url} alt={item.alt} />                        
+                </a>
+                ))}
+            </div>
+          </div>
+        )}
+      </section>
     </>
   );
 };
