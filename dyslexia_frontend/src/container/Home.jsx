@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { NavFeed, SliderFeeds, AboutFeed, FeaturedFeed ,Services, Courses, Products, Partners, Followers, Contact} from '../components';
+import { NavFeed, SliderFeeds, AboutFeed, FeaturedFeed ,ServicesFeed, CoursesFeed, ProductsFeed, PartnersFeed, NewsletterFeed, Contact} from '../components';
 
 
 const Home = () => {
@@ -24,23 +24,23 @@ const Home = () => {
       </div>
      
       <div className="w-full">
-        <Services />
+        <ServicesFeed />
       </div>
 
       <div className="w-full">
-        <Courses />
+        <CoursesFeed />
       </div>
 
       <div className="w-full ">
-        <Products />
+        <ProductsFeed />
       </div>
 
       <div className="w-full">
-        <Partners/>
+        <PartnersFeed/>
       </div>
 
       <div className="w-full">
-        <Followers/>
+        <NewsletterFeed/>
       </div>
 
       <div className="w-full">

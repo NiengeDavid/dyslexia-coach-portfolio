@@ -7,38 +7,35 @@ import microsoft from "../Assets/Microsoft.svg";
 import spotify from "../Assets/Spotify.svg";
 
 
-const Partners = () => {
+const Partners = ({ data, title }) => {
+  function mapDataToArray(data) {
+    try {
+      return Object.keys(data).map((key) => data[key]);
+    } catch (error) {
+      console.error("An error occurred while mapping data:", error);
+      return [];
+    }
+  }
+
+  const logos = mapDataToArray(data)
+  const heading = mapDataToArray(title)
+
     return (
         <>
-           <div className="lg:bg-[#EDFAFC] lg:mx-[11rem]  rounded-[2rem]"> 
-           <div className="text-center px-[50px] mt-[3rem] mb-[4rem]  lg:mt-[-0.2px] lg:pt-[40px]  lg:mb-[0rem]">
-                <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl ">
-                    Partners
-                </h1>
-            </div>
-
-             {/*Logos*/}
-        <div className="grid grid-cols-2 mb-[2rem] px-[3rem] gap-4 justify-center md:mx-[95px] lg:px-[3rem]  lg:grid-cols-6 lg:mr-[2rem]  lg:mt-[2rem]">
-          <span className="mb-[2rem] w-[200px]">
-            <img src={airbnb} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={google} alt="" />
-          </span>
-          <span className="mb-[2rem] w-[200px]">
-            <img src={microsoft} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={spotify} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={mallichimp} alt="" />
-          </span>
-          <span className="w-[200px]">
-            <img src={mashable} alt="" />
-          </span>
-        </div>
-           </div>
+            <section className="bg-[#EDFAFC] md:bg-transparent my-5">
+              {heading.map((item, index) => (
+                <div key={index} className="py-8 bg-[#EDFAFC] lg:py-10 mx-auto max-w-screen-lg px-4 lg:rounded-[50px]">
+                  <h2 className="mb-8 lg:mb-8 text-3xl font-extrabold tracking-tight font-[Segoe UI] leading-tight text-center text-[#006273] md:text-4xl">{item[3].title}</h2>
+                  <div className="grid grid-cols-2 gap-8 text-[#73A4A0] md:grid-cols-3 lg:grid-cols-6">
+                      {logos.map((item, index) => (
+                        <a key={index} href={item.link} className="flex justify-center items-center transition-transform hover:duration-300 hover:transform hover:translate-y-1">
+                          <img src={item.logo.asset.url} alt={item.alt} />                        
+                      </a>
+                      ))}
+                  </div>
+                </div>
+              ))}
+            </section>
         </>
     )
 }

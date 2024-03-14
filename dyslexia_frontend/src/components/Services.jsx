@@ -1,86 +1,45 @@
 import React from "react";
-import adhd from '../Assets/ADHD.jpg';
-import ellispegray from '../Assets/Ellipse_2.png';
-import ellispegreen from '../Assets/Ellipse_3.png';
 
-const Services = () => {
-    const Index = 6
+const Services = ( {data, title} ) => {
+  function mapDataToArray(data) {
+    try {
+      return Object.keys(data).map((key) => data[key]);
+    } catch (error) {
+      console.error("An error occurred while mapping data:", error);
+      return [];
+    }
+  }
+
+  const card = mapDataToArray(data);
+  const heading = mapDataToArray(title);
+
   return (
-    <section id="Services">
-      <div className="flex flex-col " id="Services">
-        <div className="text-center px-[50px] lg: ">
-          <h1 className="text-[#006273] font-extrabold text-4xl lg:text-5xl">
-            Services I offer
-          </h1>
-
-          <p className="pt-[45px]  text-[#73A4A0] leading-loose text-[18px] lg:pt-[25px] lg:text-[20px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo
-            facilis aliquam alias accusamus ad fugiat sequi non cupiditate, a
-            nulla officiis.
-          </p>
-        </div>
-
-        {/* Card */}
-        <div className=" lg:relative  my-[3rem] px-[2rem] z-1  lg:grid lg:grid-cols-3 lg:gap-3 lg:my-[4.5rem] bg-transparent">
-            {[...Array(6).keys()].map((index) => (
-
-           
-          <div key={index} className="max-w-md  mb-[2.5rem] mx-[1rem]   border bg-transparent border-gray-200 rounded-lg shadow">
-              <a href="#">
-                <img
-                className="object-fit rounded-t-lg max-h-[19rem] w-[28rem]  "
-                src={adhd}
-                alt=""
-               />
-              </a>
-
-              <div className="p-5 ">
-                <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                 Creating Dyslexia Awareness
-                  </h5>
-                </a>
-                <p className="mb-4 font-normal leading-7 text-gray-700 dark:text-gray-400">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium tenetur vero quo.
-                  Assumenda quibusdam, voluptate,
-                   quis unde in ipsa voluptates dicta quidem totam quod est eligendi nisi accusamus animi.
-                </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center px-3 py-3 text-sm font-medium text-center text-white bg-[#006273] rounded-lg hover:bg-white hover:text-[#006273] hover:border hover:border-[#006273] focus:ring-4 focus:outline-non focus:ring-[#006273]"
-                   >
-                 <span className=""> Access Here</span>
-                  <svg
-                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-                </a>
-              </div>
-            </div>
-             ))}
-
-                  <div className=" hidden lg:block lg:absolute lg:inset-0  z-[-1] lg:mt-[350px]  ">
-                  <img src={ellispegreen} className="lg:absolute w-[370px] z-[1] lg:inset-0  lg:mt-[150px]" alt="Second Image"/>
-                   <img src={ellispegray} className="lg:absolute lg:inset-0  w-[370px] " alt="First Image"/>
-                   
-                  </div>
-               
+    <section className="bg-white" id="Services">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+          {heading.map((item, index) => (
+            <div key={index} className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-[#006273]">{item[1].title}</h2>
+              <p className="font-light text-gray-500 lg:mb-16 md:text-xl">{item[1].description}</p>
           </div>
-
-
-
-      </div>
+          ))}
+          
+          <div className="grid gap-8 mb-6 md:mb-16 md:grid-cols-3">
+            {card.map((item, index) => (
+              <div key={index} className="items-center bg-gray-50 rounded-lg shadow">
+                <a href="#">
+                  <img className="w-full rounded-lg md:rounded-none md:rounded-l-lg" src={item.image.asset.url} alt={item.title} />
+                </a>
+                <div className="p-5 pb-7">
+                  <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <a href="#">{item.title}</a>
+                  </h3>
+                  <p className="mt-3 mb-4 font-light text-gray-500">{item.description}</p>
+                  <a href="#" className="mb-4 text-white bg-[#006273] hover:bg-[#006273]/90 focus:ring-4 focus:ring-[#006273]/20 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
+                </div>
+            </div>
+            ))}  
+          </div>
+        </div>
     </section>
   );
 };

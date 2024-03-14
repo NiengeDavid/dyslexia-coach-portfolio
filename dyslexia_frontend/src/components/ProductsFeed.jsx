@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { client } from "../client";
-import { sections, featured } from "../utils/data";
-import  { Featured }  from "../components";
+import { sections, products } from "../utils/data";
+import  { Products }  from "../components";
 
-const FeaturedFeed = () => {
+
+const ProductsFeed = () => {
     const [section, setSection] = useState(null);
     const [feed, setFeed] = useState(null);
 
@@ -14,7 +15,7 @@ const FeaturedFeed = () => {
           .fetch(query)
           .then((data) => {
             setSection(data);
-            //console.log(data);
+            console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Section data:', error);
@@ -22,7 +23,7 @@ const FeaturedFeed = () => {
     }, [])
 
     useEffect(() => {
-        const query = featured;
+        const query = products;
 
         client
           .fetch(query)
@@ -31,15 +32,14 @@ const FeaturedFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Featured-On data:', error);
+            console.log('Error fetching Products data:', error);
           });
     }, [])
-    
 
 
-  return (
-    <div>{ feed && <Featured data={feed} title={section} /> }</div>
-  )
+    return (
+        <div>{ feed && <Products data={feed} title={section} /> }</div>
+    )
 }
 
-export default FeaturedFeed;
+export default ProductsFeed;

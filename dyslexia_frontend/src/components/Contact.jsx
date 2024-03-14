@@ -5,8 +5,7 @@ import ellispegreen from '../Assets/footer_ellipse_2.png';
 
 const Contact = () => {
     return (
-        <>
-           
+        <>  
         <section id="Contact" className=" pt-[50px] bg-[#156760] mt-[50px] lg:relative   lg:flex lg:pt-[150px]">
           <div className="py-8 px-4 mx-auto max-w-3xl  lg:z-[]">
             <h2 className="mb-7 text-4xl tracking-tight font-extrabold text-white ">Send me a Message</h2>
@@ -99,15 +98,7 @@ const Contact = () => {
                 <p className="text-[#D1D5DB] py-[27px]">
                 &copy; BlessingIngyape™. All Rights Reserved.
                 </p> 
-          </div>
-
-          <div className=" hidden lg:block lg:absolute lg:inset-0  z-[0] lg:mt-[5960px]  ">
-                  <img src={ellispegreen} className="lg:absolute w-[400px] z-[1] lg:inset-0  lg:mt-[150px]" alt="Second Image"/>
-                  <img src={ellispegray} className="lg:absolute lg:inset-0  w-[400px] " alt="First Image"/>
-                   
-                  </div>
-               
-       
+        </div>
         </>
     )
 }

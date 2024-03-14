@@ -56,7 +56,50 @@ export const featured = `*[_type == "featured"] {
   link
 }`
 
-export const sections =  `*[_type == "sections"] {
+export const sections =  `*[_type == "sections"] | order(_createdAt asc) {
+  title,
+  description,
+}`
+
+export const services = `*[_type == "services"] {
+  image {
+    asset -> {
+      url
+    }
+  },
   title,
   description
+}`
+
+export const courses = `*[_type == "courses"] {
+  image {
+    asset -> {
+      url
+    }
+  },
+  title,
+  description,
+  url
+}`
+
+export const products = `*[_type == "products"] {
+  image {
+    asset -> {
+      url
+    }
+  },
+  title,
+  amount,
+  url,
+  btn
+}`
+
+export const partners = `*[_type == "partners"] {
+  logo {
+    asset -> {
+      url
+    }
+  },
+  alt,
+  link
 }`

@@ -59,18 +59,16 @@ const Navbar = ({ data, menu }) => {
                     <ul className="flex flex-col p-4 text-outline md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-inherit">
                         {menuFeed.map((item, index) => (
                             <li key={index}>
-                                <Link to={`/${item.item}`} key={index}>
-                                    <ScrollLink 
-                                        to={item.item}
-                                        spy={true}
-                                        smooth={true}
-                                        duration={400}
-                                        >
-                                        <div href="#" className="block shadow-black drop-shadow-md py-2 px-3 text-white bg-[#5FD5E4] rounded md:bg-transparent md:hover:text-[#5FD5E4] md:p-0" aria-current="page"> 
-                                            {item.item} 
-                                        </div>
-                                    </ScrollLink>
-                                </Link>
+                                <ScrollLink  
+                                    key={index}
+                                    to={item.item}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={400}
+                                    className="block shadow-black drop-shadow-md py-2 px-3 text-white bg-[#5FD5E4] rounded cursor-pointer md:bg-transparent md:hover:text-[#5FD5E4] md:p-0" aria-current="page"
+                                >
+                                    {item.item} 
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>

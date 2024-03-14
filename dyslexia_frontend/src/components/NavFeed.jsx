@@ -37,7 +37,7 @@ const NavFeed = () => {
 
   return (
     <>
-      { feed && <Navbar data={feed} menu={nav} /> }
+      {feed && <Navbar data={feed} menu={nav} /> }
     </>
   );
 };

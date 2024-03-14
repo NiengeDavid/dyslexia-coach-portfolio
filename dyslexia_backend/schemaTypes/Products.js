@@ -17,10 +17,9 @@ export default {
             type: 'string'
         },
         {
-            name: 'description',
-            title: 'Description',
+            name: 'amount',
+            title: 'Amount',
             type: 'string',
-            description: 'Make it short and atmost one sentence.'
         },
         {
             name: 'url',

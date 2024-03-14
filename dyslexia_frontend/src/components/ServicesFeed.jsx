@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { client } from "../client";
-import { sections, featured } from "../utils/data";
-import  { Featured }  from "../components";
+import { sections, services } from "../utils/data";
+import  { Services }  from "../components";
 
-const FeaturedFeed = () => {
+const ServicesFeed = () => {
     const [section, setSection] = useState(null);
     const [feed, setFeed] = useState(null);
 
@@ -22,7 +22,7 @@ const FeaturedFeed = () => {
     }, [])
 
     useEffect(() => {
-        const query = featured;
+        const query = services;
 
         client
           .fetch(query)
@@ -31,15 +31,13 @@ const FeaturedFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Featured-On data:', error);
+            console.log('Error fetching Services data:', error);
           });
     }, [])
-    
-
 
   return (
-    <div>{ feed && <Featured data={feed} title={section} /> }</div>
+    <div>{ feed && <Services data={feed} title={section} /> }</div>
   )
 }
 
-export default FeaturedFeed;
+export default ServicesFeed;
