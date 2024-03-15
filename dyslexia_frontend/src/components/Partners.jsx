@@ -1,11 +1,4 @@
 import React from "react";
-import airbnb from "../Assets/Airbnb.svg";
-import google from "../Assets/Google.svg";
-import mallichimp from "../Assets/mallichimp.svg";
-import mashable from "../Assets/Mashable.svg";
-import microsoft from "../Assets/Microsoft.svg";
-import spotify from "../Assets/Spotify.svg";
-
 
 const Partners = ({ data, title }) => {
   function mapDataToArray(data) {
@@ -23,9 +16,9 @@ const Partners = ({ data, title }) => {
     return (
         <>
             <section className="bg-[#EDFAFC] md:bg-transparent my-5">
-              {heading.map((item, index) => (
-                <div key={index} className="py-8 bg-[#EDFAFC] lg:py-10 mx-auto max-w-screen-lg px-4 lg:rounded-[50px]">
-                  <h2 className="mb-8 lg:mb-8 text-3xl font-extrabold tracking-tight font-[Segoe UI] leading-tight text-center text-[#006273] md:text-4xl">{item[3].title}</h2>
+              {heading ? (
+                <div className="py-8 bg-[#EDFAFC] lg:py-10 mx-auto max-w-screen-lg px-4 lg:rounded-[50px]">
+                  <h2 className="mb-8 lg:mb-8 text-3xl font-extrabold tracking-tight font-[Segoe UI] leading-tight text-center text-[#006273] md:text-4xl">{heading[3].title}</h2>
                   <div className="grid grid-cols-2 gap-8 text-[#73A4A0] md:grid-cols-3 lg:grid-cols-6">
                       {logos.map((item, index) => (
                         <a key={index} href={item.link} className="flex justify-center items-center transition-transform hover:duration-300 hover:transform hover:translate-y-1">
@@ -34,7 +27,9 @@ const Partners = ({ data, title }) => {
                       ))}
                   </div>
                 </div>
-              ))}
+              ) : (
+                <p>Fetching data...</p>
+              )}
             </section>
         </>
     )

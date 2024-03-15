@@ -16,12 +16,14 @@ const Services = ( {data, title} ) => {
   return (
     <section className="bg-white" id="Services">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-          {heading.map((item, index) => (
-            <div key={index} className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-[#006273]">{item[1].title}</h2>
-              <p className="font-light text-gray-500 lg:mb-16 md:text-xl">{item[1].description}</p>
+          {heading ? (
+            <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-[#006273]">{heading[1].title}</h2>
+              <p className="font-light text-gray-500 lg:mb-16 md:text-xl">{heading[1].description}</p>
           </div>
-          ))}
+          ) : (
+            <p>Fetching data...</p>
+          )}
           
           <div className="grid gap-8 mb-6 md:mb-16 md:grid-cols-3">
             {card.map((item, index) => (

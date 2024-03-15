@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { NavFeed, SliderFeeds, AboutFeed, FeaturedFeed ,ServicesFeed, CoursesFeed, ProductsFeed, PartnersFeed, NewsletterFeed, Contact} from '../components';
+import { NavFeed, SliderFeeds, AboutFeed, FeaturedFeed ,ServicesFeed, CoursesFeed, ProductsFeed, PartnersFeed, NewsletterFeed, FooterFeed} from '../components';
 
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
       </div>
 
       <div className="w-full">
-        <Contact/>
+        <FooterFeed/>
       </div>
 
     </div>

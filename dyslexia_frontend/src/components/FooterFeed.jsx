@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { client } from "../client";
-import { sections, partners } from "../utils/data";
-import  { Partners }  from "../components";
+import { sections, socials } from "../utils/data";
+import  { Footer }  from "../components";
 
-const PartnersFeed = () => {
+const FooterFeed = () => {
     const [section, setSection] = useState(null);
     const [feed, setFeed] = useState(null);
 
@@ -14,7 +14,7 @@ const PartnersFeed = () => {
           .fetch(query)
           .then((data) => {
             setSection(data);
-            //console.log(data);
+            console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Section data:', error);
@@ -22,13 +22,13 @@ const PartnersFeed = () => {
     }, [])
 
     useEffect(() => {
-        const query = partners;
+        const query = socials;
 
         client
           .fetch(query)
           .then((data) => {
             setFeed(data);
-            //console.log(data);
+            console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Partners data:', error);
@@ -36,8 +36,8 @@ const PartnersFeed = () => {
     }, [])
 
   return (
-    <div>{ feed && <Partners data={feed} title={section} /> }</div>
+    <div>{ feed && <Footer data={feed} title={section} /> }</div>
   )
 }
 
-export default PartnersFeed;
+export default FooterFeed;

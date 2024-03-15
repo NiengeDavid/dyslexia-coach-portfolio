@@ -103,3 +103,13 @@ export const partners = `*[_type == "partners"] {
   alt,
   link
 }`
+
+export const socials = `*[_type == "socials"] | order(_createdAt asc) {
+  logo {
+    asset -> {
+      url
+    }
+  },
+  alt,
+  url
+}`

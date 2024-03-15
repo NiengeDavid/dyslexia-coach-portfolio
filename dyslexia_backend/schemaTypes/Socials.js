@@ -1,5 +1,5 @@
 export default {
-    name: 'Socials',
+    name: 'socails',
     title: 'Socials',
     type: 'document',
     fields: [
