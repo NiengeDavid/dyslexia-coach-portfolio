@@ -8,7 +8,7 @@ const CoursesFeed = () => {
 
     useEffect(() => {
         const query = courses;
-
+        
         client
           .fetch(query)
           .then((data) => {
