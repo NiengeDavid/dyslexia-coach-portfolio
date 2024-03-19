@@ -1,2 +1,21 @@
 export { default as Navbar } from './Navbar';
 export { default as Slider } from './Slider';
+export { default as About } from './About';
+export { default as Featured } from './Featured';
+export { default as FeaturedFeed } from './FeaturedFeed';
+export {default as Services} from './Services';
+export {default as ServicesFeed} from './ServicesFeed';
+export {default as Courses} from './Courses';
+export {default as CoursesFeed} from './CoursesFeed';
+export {default as Products} from './Products';
+export {default as ProductsFeed} from './ProductsFeed';
+export {default as Partners} from './Partners';
+export {default as PartnersFeed} from './PartnersFeed';
+export {default as Newsletter} from './Newsletter';
+export {default as NewsletterFeed} from './NewsletterFeed';
+export {default as Footer} from './Footer';
+export {default as FooterFeed} from './FooterFeed';
+export { default as SliderFeeds } from './SliderFeeds';
+export { default as NavFeed } from './NavFeed';
+export { default as AboutFeed } from './AboutFeed';
+

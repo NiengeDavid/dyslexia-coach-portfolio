@@ -26,11 +26,5 @@ export default {
             title: 'Link',
             type: 'string'
         },
-        {
-            name: 'button',
-            title: 'Button content',
-            type: 'string',
-            description: 'This is the text within the redirect button'
-        }
     ]
 }
