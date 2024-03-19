@@ -39,12 +39,12 @@ const NavBar = ({ data, menu }) => {
   return (
     <div>
         <Navbar className={`fixed w-full z-20 top-0 start-0 transition duration-300 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
-            <Navbar.Brand href="https://flowbite-react.com">
+            <Navbar.Brand href="/">
                 {bioFeed.map((item, index) =>  (
-                    <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse" key={index}>
+                    <div className="flex items-center space-x-3 rtl:space-x-reverse" key={index}>
                         <img src={item.logo.asset.url} className="h-8" alt="My Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#5FD5E4]">{item.yourname}</span>
-                    </a>
+                    </div>
                 ))}
             </Navbar.Brand>
             <div className="flex md:order-2">
