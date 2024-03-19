@@ -38,7 +38,7 @@ const NavBar = ({ data, menu }) => {
 
   return (
     <div>
-        <Navbar className={`fixed max-w-screen-xl w-full z-20 top-0 start-0 transition duration-300 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
+        <Navbar className={`fixed max-w-screen-xl mx-auto w-full z-20 top-0 start-0 transition duration-300 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
             <Navbar.Brand href="/">
                 {bioFeed.map((item, index) =>  (
                     <div className="flex items-center space-x-3 rtl:space-x-reverse" key={index}>
