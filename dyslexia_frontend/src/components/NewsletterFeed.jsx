@@ -13,7 +13,7 @@ const NewsletterFeed = () => {
           .fetch(query)
           .then((data) => {
             setSection(data);
-            console.log(data);
+            //console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Section data:', error);

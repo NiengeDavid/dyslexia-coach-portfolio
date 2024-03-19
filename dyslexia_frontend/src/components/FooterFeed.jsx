@@ -14,7 +14,7 @@ const FooterFeed = () => {
           .fetch(query)
           .then((data) => {
             setSection(data);
-            console.log(data);
+            //console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Section data:', error);
@@ -28,7 +28,7 @@ const FooterFeed = () => {
           .fetch(query)
           .then((data) => {
             setFeed(data);
-            console.log(data);
+            //console.log(data);
           })
           .catch((error) => {
             console.log('Error fetching Partners data:', error);
