@@ -28,15 +28,15 @@ const Services = ( {data, title} ) => {
           <div className="grid gap-8 mb-6 md:mb-16 md:grid-cols-3">
             {card.map((item, index) => (
               <div key={index} className="items-center bg-gray-50 rounded-lg shadow">
-                <a href="#">
+                <a href={item.link}>
                   <img className="w-full rounded-lg md:rounded-none md:rounded-l-lg" src={item.image.asset.url} alt={item.title} />
                 </a>
                 <div className="p-5 pb-7">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      <a href="#">{item.title}</a>
+                      <a href={item.link}>{item.title}</a>
                   </h3>
                   <p className="mt-3 mb-4 font-light text-gray-500">{item.description}</p>
-                  <a href="#" className="mb-4 text-white bg-[#006273] hover:bg-[#006273]/90 focus:ring-4 focus:ring-[#006273]/20 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
+                  <a href={item.link} className="mb-4 text-white bg-[#006273] hover:bg-[#006273]/90 focus:ring-4 focus:ring-[#006273]/20 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
                 </div>
             </div>
             ))}  

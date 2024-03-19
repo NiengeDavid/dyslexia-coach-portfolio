@@ -32,7 +32,7 @@ const Products = ( { data, title } ) => {
                     {card.map((item, index) => (
                         <div key={index} className="w-full max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow">
                             <a href={item.url}>
-                                <img className="w-full pb-8 rounded-t-lg" src={item.image.asset.url} alt="product image" />
+                                <img className="w-full pb-8 rounded-t-lg" src={item.image.asset.url} alt="product" />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href={item.url}>

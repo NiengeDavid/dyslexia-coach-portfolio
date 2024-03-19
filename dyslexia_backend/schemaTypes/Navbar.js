@@ -18,7 +18,7 @@ export default {
     },
     {
         name: 'button',
-        title: 'Button',
+        title: 'Button URL',
         type: 'string',
       },
   ],

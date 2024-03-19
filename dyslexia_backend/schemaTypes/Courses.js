@@ -23,7 +23,12 @@ export default {
         },
         {
             name: 'url',
-            title: 'Link',
+            title: 'Course Link',
+            type: 'string'
+        },
+        {
+            name: 'whatsapp',
+            title: 'WhatsApp',
             type: 'string'
         },
     ]

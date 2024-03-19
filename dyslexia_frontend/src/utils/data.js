@@ -68,7 +68,8 @@ export const services = `*[_type == "services"] {
     }
   },
   title,
-  description
+  description,
+  link
 }`
 
 export const courses = `*[_type == "courses"] {
@@ -79,7 +80,8 @@ export const courses = `*[_type == "courses"] {
   },
   title,
   description,
-  url
+  url,
+  whatsapp
 }`
 
 export const products = `*[_type == "products"] {

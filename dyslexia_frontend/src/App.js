@@ -1,23 +1,14 @@
-import React, { useEffect } from "react";
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './container/Home';
-
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./container/Home";
 
 const App = () => {
-
   return (
     <>
-    
       <Routes>
-          <Route path="/*" element={<Home />} />
-          
-        </Routes>
-
-
-
+        <Route path="/*" element={<Home />} />
+      </Routes>
     </>
-    
   );
 };
 

@@ -21,5 +21,10 @@ export default {
             title: 'Description',
             type: 'string'
         },
+        {
+            name: 'link',
+            title: 'Access link',
+            type: 'string'
+        },
     ]
 }

@@ -61,7 +61,7 @@ const Footer = ( { data, title } ) => {
               <div className="sm:flex mx-auto px-4 space-x-2 sm:items-center sm:justify-center max-w-screen-xl">
                   <span className="text-sm text-gray-300 sm:text-center">
                     &copy; <span>{new Date().getFullYear()}</span> 
-                    <a className="hover:underline cursor-pointer"> BlessingIngyape™</a>
+                    <span className="hover:underline cursor-pointer"> BlessingIngyape™</span>
                       . All Rights Reserved.
                   </span>
               </div>
