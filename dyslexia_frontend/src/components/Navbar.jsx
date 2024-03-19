@@ -49,7 +49,7 @@ const NavBar = ({ data, menu }) => {
             </Navbar.Brand>
             <div className="flex md:order-2">
                 {bioFeed.map((item, index) =>  (
-                    <a key={index} href={item.button} className="text-[#25d366] cursor-pointer mr-2 bg-[#075e54] hover:bg-[#128c7e] focus:ring-4 focus:outline-none focus:ring-[#25d366]/50 font-medium rounded-lg text-[6px] px-4 py-2 text-center md:text-sm md:mr-0">WhatsApp💬</a>
+                    <a key={index} href={item.button} className="text-[#25d366] cursor-pointer mr-1 bg-[#075e54] hover:bg-[#128c7e] focus:ring-4 focus:outline-none focus:ring-[#25d366]/50 font-medium rounded-lg text-[6px] px-2 py-1 text-center md:py-2 md:px-4 md:text-sm md:mr-0">WhatsApp💬</a>
                 ))}
                 <Navbar.Toggle className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#5FD5E4] rounded-lg md:hidden hover:bg-[#5FD5E4]/20 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-sticky" aria-expanded="false"/>
             </div>
