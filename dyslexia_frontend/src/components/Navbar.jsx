@@ -38,12 +38,12 @@ const NavBar = ({ data, menu }) => {
 
   return (
     <div>
-        <Navbar className={`fixed w-full z-20 py-5 top-0 start-0 transition duration-300 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
+        <Navbar className={`fixed w-full z-20 py-2 top-0 start-0 transition duration-300 md:py-5 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
             <Navbar.Brand href="/">
                 {bioFeed.map((item, index) =>  (
                     <div className="flex items-center space-x-3 rtl:space-x-reverse" key={index}>
-                        <img src={item.logo.asset.url} className="h-8" alt={item.yourname} />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#5FD5E4]">{item.yourname}</span>
+                        <img src={item.logo.asset.url} className="h-6 md:h-8" alt={item.yourname} />
+                        <span className="self-center text-xl font-semibold whitespace-nowrap text-[#5FD5E4] md:text-2xl">{item.yourname}</span>
                     </div>
                 ))}
             </Navbar.Brand>
