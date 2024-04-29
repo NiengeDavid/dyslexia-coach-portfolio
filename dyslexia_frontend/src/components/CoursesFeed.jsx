@@ -16,7 +16,7 @@ const CoursesFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Courses data:', error);
+            //console.log('Error fetching Courses data:', error);
           });
     }, [])
 
