@@ -18,7 +18,7 @@ const Footer = ( { data, title } ) => {
         <>  
          <section id="Contact" className="bg-[#156760] md:flex items-center justify-center mx-auto space-y-0">
             {/* <!-- send me a message --> */}
-            {heading ? (
+            {title ? (
               <div className="py-12 md:pt-28 px-4 mx-auto max-w-3xl">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">{heading[5].title}</h2>
               <p className="mb-8 lg:mb-16 font-light text-white sm:text-xl">{heading[5].description}</p>

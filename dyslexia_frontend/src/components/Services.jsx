@@ -16,7 +16,7 @@ const Services = ( {data, title} ) => {
   return (
     <section className="bg-white" id="Services">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-          {heading ? (
+          {title ? (
             <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-[#006273]">{heading[1].title}</h2>
               <p className="font-light text-gray-500 lg:mb-16 md:text-xl">{heading[1].description}</p>
