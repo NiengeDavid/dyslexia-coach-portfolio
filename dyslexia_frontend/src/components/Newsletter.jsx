@@ -6,7 +6,7 @@ const Newsletter = ( { title } ) => {
         try {
           return Object.keys(data).map((key) => data[key]);
         } catch (error) {
-          console.error("An error occurred while mapping data:", error);
+          //console.error("An error occurred while mapping data:", error);
           return [];
         }
     }

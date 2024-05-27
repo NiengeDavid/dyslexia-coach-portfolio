@@ -17,7 +17,7 @@ const PartnersFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Section data:', error);
+            //console.log('Error fetching Section data:', error);
           });
     }, [])
 
@@ -31,7 +31,7 @@ const PartnersFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Partners data:', error);
+            //console.log('Error fetching Partners data:', error);
           });
     }, [])
 

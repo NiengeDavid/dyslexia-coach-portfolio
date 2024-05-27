@@ -17,7 +17,7 @@ const AboutFeed = () => {
         //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching About data:', error);
+        //console.log('Error fetching About data:', error);
       });
   }, []);
 
@@ -31,7 +31,7 @@ const AboutFeed = () => {
         //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching About Details data:', error);
+        //console.log('Error fetching About Details data:', error);
       });
   }, []);
 

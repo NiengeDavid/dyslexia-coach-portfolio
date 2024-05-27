@@ -18,7 +18,7 @@ const ProductsFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Section data:', error);
+            //console.log('Error fetching Section data:', error);
           });
     }, [])
 
@@ -32,7 +32,7 @@ const ProductsFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Products data:', error);
+            //console.log('Error fetching Products data:', error);
           });
     }, [])
 

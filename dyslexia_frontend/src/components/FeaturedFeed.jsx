@@ -17,7 +17,7 @@ const FeaturedFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Section data:', error);
+            //console.log('Error fetching Section data:', error);
           });
     }, [])
 
@@ -31,7 +31,7 @@ const FeaturedFeed = () => {
             //console.log(data);
           })
           .catch((error) => {
-            console.log('Error fetching Featured-On data:', error);
+            //console.log('Error fetching Featured-On data:', error);
           });
     }, [])
     

@@ -17,7 +17,7 @@ const SliderFeeds = () => {
             //console.log(data)
         })
         .catch((error) => {
-            console.log('Error fetching Slider data:', error);
+            //console.log('Error fetching Slider data:', error);
         })
     }, [])
 

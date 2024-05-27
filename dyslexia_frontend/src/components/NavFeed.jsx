@@ -17,7 +17,7 @@ const NavFeed = () => {
         //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching Navbar data:', error);
+        //console.log('Error fetching Navbar data:', error);
       });
   }, []);
 
@@ -31,7 +31,7 @@ const NavFeed = () => {
         //console.log(data);
       })
       .catch((error) => {
-        console.log('Error fetching Menu data:', error);
+        //console.log('Error fetching Menu data:', error);
       });
   }, []);
 
