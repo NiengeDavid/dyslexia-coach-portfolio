@@ -23,7 +23,7 @@ const Featured = ({ data, title }) => {
             <div className="grid grid-cols-2 gap-8 text-[#73A4A0] md:gap-12 md:grid-cols-4 lg:grid-cols-4">
                 {logos.map((item, index) => (
                   <a key={index} href={item.link} className="flex justify-center items-center transition-transform hover:duration-300 hover:transform hover:translate-y-1">
-                    <img src={item.logo.asset.url} alt={item.alt} />                        
+                    <img src={item.logo.asset.url} alt={item.alt} className="w-24 h-auto" />                        
                 </a>
                 ))}
             </div>
