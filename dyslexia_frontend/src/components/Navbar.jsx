@@ -43,7 +43,7 @@ const NavBar = ({ data, menu }) => {
                 <Navbar.Brand href="/">
                     {bioFeed.map((item, index) =>  (
                         <div className="flex items-center space-x-3 rtl:space-x-reverse" key={index}>
-                            <img src={item.logo.asset.url} className="h-6 md:h-8" alt={item.yourname} />
+                            <img src={item.logo.asset.url} className="h-12 md:h-16" alt={item.yourname} />
                             <span className="self-center text-xl font-semibold whitespace-nowrap text-[#5FD5E4] md:text-2xl">{item.yourname}</span>
                         </div>
                     ))}
