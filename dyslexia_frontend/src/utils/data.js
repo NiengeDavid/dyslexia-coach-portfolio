@@ -106,7 +106,7 @@ export const partners = `*[_type == "partners"] {
   link
 }`
 
-export const socials = `*[_type == "socials"] | order(_createdAt asc) {
+export const socials = `*[_type == "socails"] | order(_createdAt asc) {
   logo {
     asset -> {
       url
