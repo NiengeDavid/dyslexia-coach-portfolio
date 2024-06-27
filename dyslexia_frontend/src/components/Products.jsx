@@ -28,7 +28,7 @@ const Products = ( { data, title } ) => {
                 
                 
                 
-                <div className="grid gap-8 mb-6 md:mb-16 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-8 mb-6 md:mb-16 md:grid-cols-2 lg:grid-cols-3">
                     {card.map((item, index) => (
                         <div key={index} className="w-full max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow">
                             <a href={item.url}>
