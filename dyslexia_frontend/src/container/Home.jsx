@@ -1,6 +1,4 @@
 import React from "react";
-import { Toast, ToastToggle } from "flowbite-react";
-import { HiFire } from "react-icons/hi";
 import { Alert } from "flowbite-react";
 
 import {
