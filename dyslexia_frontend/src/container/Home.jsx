@@ -28,6 +28,7 @@ const Home = () => {
           <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScDMrvkIbeHcG-qpXfodFfPqzZ-mVW2E5hwB3gyBOBE1GuciQ/viewform?usp=pp_url"
           target="_blank"
+          rel="noreferrer"
           className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
         >
           Join us
