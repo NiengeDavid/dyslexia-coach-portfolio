@@ -26,8 +26,6 @@ const Footer = ({ data, title }) => {
               name="contact"
               className="space-y-8 max-w-xl"
               method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
@@ -75,7 +73,6 @@ const Footer = ({ data, title }) => {
                   required
                 ></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <button
                 type="submit"
                 className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#51CAC0] sm:w-fit hover:bg-[#008E82] focus:ring-4 focus:outline-none focus:ring-[#51CAC0]/75 "
