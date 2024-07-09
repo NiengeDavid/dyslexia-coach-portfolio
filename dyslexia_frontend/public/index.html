@@ -24,53 +24,14 @@
     <title>Blessing Ingyape | Dyslexia Coach</title>
   </head>
   <body>
-    <form
-      name="contact"
-      className="space-y-8 max-w-xl"
-      netlify
-      data-netlify-honeypot="bot-field"
-      hidden
-    >
-      <div>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          className="shadow-sm bg-[#008E82] border border-[#008E82] text-white text-sm rounded-lg focus:ring-[#008E82]/75 focus:border-[#008E82]/80 block w-full p-2.5"
-          placeholder="Your name"
-          required
-        />
-      </div>
-      <div>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="shadow-sm bg-[#008E82] border border-[#008E82] text-white text-sm rounded-lg focus:ring-[#008E82]/75 focus:border-[#008E82]/80 block w-full p-2.5"
-          placeholder="Your Email"
-          required
-        />
-      </div>
-      <div>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          className="block p-3 w-full text-sm text-white bg-[#008E82] rounded-lg border border-[#008E82] shadow-sm focus:ring-[#008E82]/75 focus:border-[#008E82]/80"
-          placeholder="Subject"
-          required
-        />
-      </div>
-      <div className="sm:col-span-2">
-        <textarea
-          id="message"
-          rows="6"
-          name="message"
-          className="block p-2.5 w-full text-sm text-white bg-[#008E82] rounded-lg shadow-sm border border-[#008E82] focus:ring-[#008E82]/75 focus:border-[#008E82]/80"
-          placeholder="Your Message"
-          required
-        ></textarea>
-      </div>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+
+      <input type="email" name="email" />
+
+      <input type="text" name="subject" />
+
+      <textarea name="message"></textarea>
     </form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
