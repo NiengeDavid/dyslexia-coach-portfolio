@@ -22,7 +22,7 @@ const Footer = ( { data, title } ) => {
               <div className="py-12 md:pt-28 px-4 mx-auto max-w-3xl">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">{heading[5].title}</h2>
               <p className="mb-8 lg:mb-16 font-light text-white sm:text-xl">{heading[5].description}</p>
-              <form action="#" className="space-y-8 max-w-xl">
+              <form name="contact" className="space-y-8 max-w-xl" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <div>
                   <input type="text" id="name" className="shadow-sm bg-[#008E82] border border-[#008E82] text-white text-sm rounded-lg focus:ring-[#008E82]/75 focus:border-[#008E82]/80 block w-full p-2.5" placeholder="Your name" required />
                 </div>
