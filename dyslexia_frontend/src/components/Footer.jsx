@@ -23,7 +23,7 @@ const Footer = ( { data, title } ) => {
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">{heading[5].title}</h2>
               <p className="mb-8 lg:mb-16 font-light text-white sm:text-xl">{heading[5].description}</p>
 
-              <form name="contact" className="space-y-8 max-w-xl" method="POST" data-netlify-recaptcha="true" netlify>
+              <form name="contact" className="space-y-8 max-w-xl" method="POST" netlify netlify-honeypot="bot-field" hidden>
                 <div>
                   <input type="text" id="name" name="name" className="shadow-sm bg-[#008E82] border border-[#008E82] text-white text-sm rounded-lg focus:ring-[#008E82]/75 focus:border-[#008E82]/80 block w-full p-2.5" placeholder="Your name" required />
                 </div>
@@ -36,6 +36,7 @@ const Footer = ( { data, title } ) => {
                 <div className="sm:col-span-2">
                   <textarea id="message" rows="6" name="message" className="block p-2.5 w-full text-sm text-white bg-[#008E82] rounded-lg shadow-sm border border-[#008E82] focus:ring-[#008E82]/75 focus:border-[#008E82]/80" placeholder="Your Message" required></textarea>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-[#51CAC0] sm:w-fit hover:bg-[#008E82] focus:ring-4 focus:outline-none focus:ring-[#51CAC0]/75 ">Send</button>
               </form>
 
