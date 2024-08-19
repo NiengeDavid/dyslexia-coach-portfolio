@@ -21,18 +21,21 @@ const Home = () => {
         <Alert
           color="success"
           className="bg-red-500 text-[10px] md:text-lg"
-          onDismiss={() => alert("Just fill the form! - I'll be here for a little bit longer")}
+          onDismiss={() =>
+            alert("Just fill the form! - I'll be here for a little bit longer")
+          }
         >
-          <span className="font-semibold text-white">Dyslexia project 500:</span> We are out
-          to create dyslexia awareness within 500 schools in Africa.
+          <span className="font-semibold text-white">New Book Alert:</span>{" "}
+          Preorder <b>“dyslexia - a superpower
+          unveiled”</b> now &rarr;
           <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScDMrvkIbeHcG-qpXfodFfPqzZ-mVW2E5hwB3gyBOBE1GuciQ/viewform?usp=pp_url"
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
-        >
-          Join us
-        </a>
+            href="https://selar.co/47vt40"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
+          >
+            Join us
+          </a>
         </Alert>
       </div>
 
