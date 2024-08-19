@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Alert } from "flowbite-react";
 
 import {
@@ -15,35 +15,36 @@ import {
 } from "../components";
 
 const Home = () => {
+  const [close, setClose] = useState(false)
+
   return (
     <div className="w-full overflow-x-hidden md:justify-center" id="Home">
-      <div className="w-full fixed top-0 left-0 right-0 z-30 bg-red-500">
-        <Alert
-          color="success"
-          className="bg-red-500 text-[10px] md:text-lg"
-          onDismiss={() =>
-            alert("Just fill the form! - I'll be here for a little bit longer")
-          }
-        >
-          <span className="font-semibold text-white">New Book Alert:</span>{" "}
-          Preorder <b>“dyslexia - a superpower
-          unveiled”</b> now &rarr;
-          <a
-            href="https://selar.co/47vt40"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
+      {!close && (
+        <div className="w-full fixed top-0 left-0 right-0 z-30 bg-red-500 bg-opacity-80">
+          <Alert
+            color="success"
+            className="bg-transparent text-[10px] md:text-lg"
+            onDismiss={() => setClose(true)}
           >
-            Join us
-          </a>
-        </Alert>
-      </div>
+            <span className="font-semibold text-white">New Book Alert:</span>{" "}
+            Preorder <b>“dyslexia - a superpower unveiled”</b> now &rarr;
+            <a
+              href="https://selar.co/47vt40"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
+            >
+              Preorder
+            </a>
+          </Alert>
+        </div>
+      )}
 
       <div className="w-full">
-        <NavFeed />
+        <NavFeed close={close} />
       </div>
 
-      <div className="w-full mt-12">
+      <div className={`w-full ${!close ? "mt-[52px] md:mt-[60px]" : ""}`}>
         <SliderFeeds />
       </div>
 

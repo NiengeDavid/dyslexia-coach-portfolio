@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import {Link as ScrollLink} from 'react-scroll';
 import { Navbar } from 'flowbite-react';
@@ -39,7 +38,7 @@ const NavBar = ({ data, menu }) => {
 
   return (
     <div>
-        <Navbar className={`fixed w-full mt-12 z-20 top-0 start-0 transition duration-300 md:py-5 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
+        <Navbar className={`fixed w-full z-20 top-0 start-0 transition duration-300 md:py-5 ${scrolled ? 'bg-[#006273] bg-opacity-75 rounded-b-xl' : 'bg-transparent'}` }>
             <div className="max-w-screen-xl w-full flex flex-wrap items-center justify-between mx-auto p-4">
                 <Navbar.Brand href="/">
                     {bioFeed.map((item, index) =>  (
