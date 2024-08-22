@@ -27,7 +27,7 @@ const Home = () => {
             onDismiss={() => setClose(true)}
           >
             <span className="font-semibold text-white text-[6px] md:text-sm">New Book Alert:</span>
-            <b>“dyslexia - a superpower unveiled”</b>
+            <b className="text-[6px] md:text-sm">“dyslexia - a superpower unveiled”</b>
             <a
               href="https://selar.co/47vt40"
               target="_blank"
