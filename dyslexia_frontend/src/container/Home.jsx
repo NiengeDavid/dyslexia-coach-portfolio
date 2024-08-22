@@ -26,15 +26,15 @@ const Home = () => {
             className="bg-transparent text-[10px] md:text-lg"
             onDismiss={() => setClose(true)}
           >
-            <span className="font-semibold text-white">New Book Alert:</span>{" "}
-            Preorder <b>“dyslexia - a superpower unveiled”</b> now &rarr;
+            <span className="font-semibold text-white text-[6px] md:text-sm">New Book Alert:</span>
+            <b>“dyslexia - a superpower unveiled”</b>
             <a
               href="https://selar.co/47vt40"
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg p-1.5 ml-2 text-sm font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700"
+              className="rounded-lg p-1.5 ml-2 text-[6px] font-medium bg-orange-300 text-cyan-600 hover:bg-cyan-100 dark:text-cyan-500 dark:hover:bg-gray-700 md:text-sm"
             >
-              Preorder
+              Preorder👉
             </a>
           </Alert>
         </div>
